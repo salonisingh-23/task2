@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Password Change</h2>
+<div class="container" id="container">
+	
+	<div class="form-container sign-in-container2">
+		<form action="/forget" method="post">
+            <br>
+			<h1>Enter new Password</h1>
+            <br>
+			<input type="username" placeholder="Uername" name ="username"/>
+			<input type="password" placeholder="New Password" name ="newPassword"/>
+			<input type="password" placeholder="Confirm Password" name="confirmPassword"/>
+		<br>
+			<button type="submit">Change Password</button>
+		</form>
+	</div>
+	
+</div>
+
+<footer>
+	<p>
+		
+	</p>
+</footer>
+<script>
+    const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
